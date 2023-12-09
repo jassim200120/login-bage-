@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login bage</title>
+    <script src="https://kit.fontawesome.com/a2673a891a.js" crossorigin="anonymous"></script
+</head>
+<style>
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+.input{
+
+  width: 50px;
+}
+body{
+
+
+    background-image: url(img/frozen-bubble-1943224_1280.jpg);
+    background-size: cover;
+ background-repeat: no-repeat;
+ position: fixed;
+ z-index: -100;
+}
+
+input{
+  border: 2px solid;
+  border-radius: 20px;
+  height: 30px;
+}
+a{font-size: 2em;
+margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 400px;
+position: relative;
+top: 200px;
+height: 30px;
+border-radius: 20px;
+color: black;
+}
+  div{
+
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  position: relative;
+top: 200px;
+height: 30px;
+ 
+}
+p{
+
+  color: red;
+}
+</style>
+<body>
+  <button>login</button>
+   <a><i class="fa-solid fa-user"></i></a>
+    <div>
+        
+   <input type="text" placeholder="youre name" required>
+ <br>
+ <br>
+ <input type="email" placeholder="youre email" required>
+ <br>
+ <br>
+ <input type="number" placeholder="youre phone" required>
+ <br>
+ <br>
+<input type="password" placeholder="creat password" required>
+
+<br>
+<br>
+<input class="input" type="submit" value="send">
+</div>
+<p></p>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+
+
+
+
+    $(document).ready(function(){
+
+$('.input').click(function () {
+
+
+    $('div ,a').animate({top:'-600px'})
+    $('p').text('login sucsesfull')
+})
+
+
+$('button').click(function () {
+
+
+$('div ,a').animate({top:'200px'})
+$('p').text('do you want login again?')
+
+})
+$('input').mouseenter(function(){
+
+
+$('input').css("border","2px solid aqua")
+$('a').css("color","red")
+
+})
+$('input').mouseleave(function(){
+
+
+$('input').css("border","2px solid")
+$('a').css("color","black")
+
+})
+
+    })
+</script>
+</html>
